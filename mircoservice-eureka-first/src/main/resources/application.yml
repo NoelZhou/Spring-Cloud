@@ -1,0 +1,8 @@
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: eureka-first
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-second:8002/eureka/
