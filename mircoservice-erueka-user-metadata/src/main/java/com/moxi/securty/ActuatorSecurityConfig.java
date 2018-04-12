@@ -22,7 +22,7 @@ public class ActuatorSecurityConfig extends WebSecurityConfigurerAdapter{
             }
             http.csrf().disable();  
             http.authorizeRequests()  
-                    .antMatchers("/**"+contextPath+"/**").authenticated()//拦截，并进行安全验证
+//                    .antMatchers("/**"+contextPath+"/**").authenticated()//拦截，并进行安全验证
                     .anyRequest().permitAll()//其他url请求不需要安全验证
                     .and().httpBasic();  
             
