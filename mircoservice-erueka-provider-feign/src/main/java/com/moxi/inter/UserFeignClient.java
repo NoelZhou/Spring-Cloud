@@ -11,6 +11,8 @@ import com.moxi.model.Admin;
 public interface UserFeignClient {
 	@RequestMapping(value="/{id}",method=RequestMethod.GET)
 	public Admin getHello(@PathVariable(value="id") String id);
+	
+	
 }
 
 @Component
